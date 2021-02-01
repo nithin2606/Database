@@ -11,6 +11,7 @@ public class connectToDB {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connection = DriverManager.getConnection
 					("jdbc:mysql://localhost:3306/mysql?useSSL=false","root","nithin2606");
+//			thge second mysql in the above line is the name of the database 
 			
 			System.out.println("connected");
 			connection.close();
@@ -20,5 +21,7 @@ public class connectToDB {
 
 			e.printStackTrace();
 		}
+		
+		//added this line to check the git commands
 	}
 }
